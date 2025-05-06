@@ -1,0 +1,18 @@
+POST http://localhost:3000/test-webhook
+Content-Type: application/json
+
+{
+  "events": [
+    {
+      "type": "message",
+      "message": {
+        "type": "text",
+        "text": "予約 2025/05/06 10:00 カット"
+      },
+      "source": {
+        "userId": "test-user"
+      },
+      "replyToken": "dummy-token"
+    }
+  ]
+}
